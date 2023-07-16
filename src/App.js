@@ -1,6 +1,10 @@
 import './App.css';
 
 function App() {
+    
+   const {movieName,setMovieName} = useState('')
+   const {review, setReveiw} = useState('')
+   
   return (
     <div className="App"><h1> MOVIE review</h1>
 
