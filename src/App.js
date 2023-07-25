@@ -4,13 +4,13 @@ import Axios from 'axios'
 
 function App() {
     
-   const {movieName,setMovieName} = useState('')
-   const {review, setReveiw} = useState('')
+   const {movieName,setMovieName} = useState('');
+   const {review, setReveiw} = useState('');
 
    const submitReview = () =>{
-      Axios.post("http://localhost:3000/api/instert", {
+      Axios.post("http://localhost:3001/api/instert", {
         movieNam: movieName,
-         movieReview: review
+         movieReview: review,
         }).then(()=>{
           alert("succesful insert");
         });
